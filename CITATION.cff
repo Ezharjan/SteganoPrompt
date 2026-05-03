@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use SteganoPrompt in academic work, please cite it as below."
+title: "SteganoPrompt: Invisible LLM-Readable Watermarks for Academic-Integrity Detection"
+abstract: >-
+  SteganoPrompt is an open-source web tool that embeds an invisible,
+  LLM-readable instruction inside ordinary assignment text using Unicode
+  Tag characters (U+E0000–U+E007F). When a student copies a watermarked
+  prompt verbatim into a large language model, the model follows the hidden
+  instruction and emits a tell-tale signature, allowing the educator to
+  identify undisclosed AI-assisted submissions.
+type: software
+version: "1.0.0"
+date-released: "2026-05-03"
+license: MIT
+url: "https://github.com/Ezharjan/SteganoPrompt"
+repository-code: "https://github.com/Ezharjan/SteganoPrompt"
+keywords:
+  - steganography
+  - prompt-injection
+  - academic-integrity
+  - large-language-models
+  - unicode-tags
+  - ascii-smuggler
+  - watermarking
+authors:
+  - family-names: Ezharjan
+    given-names: Alexander
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+preferred-citation:
+  type: software
+  title: "SteganoPrompt: Invisible LLM-Readable Watermarks for Academic-Integrity Detection"
+  authors:
+    - family-names: Ezharjan
+      given-names: Alexander
+  year: 2026
+  version: "1.0.0"
+  url: "https://github.com/Ezharjan/SteganoPrompt"
+  license: MIT
