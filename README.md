@@ -36,7 +36,7 @@
   - [Privacy](#privacy)
   - [Development](#development)
     - [Smoke test](#smoke-test)
-  - [Citing this tool](#citing-this-tool)
+  - [Citation](#citation)
   - [License](#license)
   - [Acknowledgements](#acknowledgements)
 
@@ -286,9 +286,27 @@ console.log("OK");
 
 ---
 
-## Citing this tool
+
+## Citation
+
+
+**Citing the affiliated paper**
 
 If SteganoPrompt informs an academic publication, please cite it:
+
+```bibtex
+@article{aiersilan2026detecting,
+  title={Detecting Verbatim LLM Copy-Paste in Homework},
+  author={Aiersilan, Aizierjiang},
+  journal={arXiv preprint arXiv:2605.16336},
+  year={2026}
+}
+```
+
+
+**Citing this tool**
+
+If you find this work useful in your research, you may also consider citing the tool itself:
 
 ```bibtex
 @software{ezharjan_steganoprompt_2026,
