@@ -1,0 +1,132 @@
+
+(cg) D:\SteganoPrompt_AIES_CameraReady\evaluation_src>python evaluate.py
+SteganoPrompt model evaluation - hidden token emission
+  models: 7   runs/task: 3   placement: end   dry-run: False
+
+=== Meta Llama 3 (>=70B)  [meta-llama/Llama-3.3-70B-Instruct] ===
+  [-- ] bubble_sort run 0
+  [-- ] bubble_sort run 1
+  [-- ] bubble_sort run 2
+  [-- ] bounded_queue run 0
+  [-- ] bounded_queue run 1
+  [-- ] bounded_queue run 2
+  [-- ] weber_bureaucracy run 0
+  [-- ] weber_bureaucracy run 1
+  [-- ] weber_bureaucracy run 2
+  [-- ] frankenstein_essay run 0
+  [-- ] frankenstein_essay run 1
+  [-- ] frankenstein_essay run 2
+
+=== Meta Llama 3 (<=8B)  [meta-llama/Llama-3.1-8B-Instruct] ===
+  [-- ] bubble_sort run 0
+  [-- ] bubble_sort run 1
+  [-- ] bubble_sort run 2
+  [-- ] bounded_queue run 0
+  [-- ] bounded_queue run 1
+  [-- ] bounded_queue run 2
+  [-- ] weber_bureaucracy run 0
+  [-- ] weber_bureaucracy run 1
+  [-- ] weber_bureaucracy run 2
+  [-- ] frankenstein_essay run 0
+  [-- ] frankenstein_essay run 1
+  [-- ] frankenstein_essay run 2
+
+=== DeepSeek V3 (0324)  [deepseek-ai/DeepSeek-V3-0324] ===
+  [-- ] bubble_sort run 0
+  [-- ] bubble_sort run 1
+  [-- ] bubble_sort run 2
+  [OK ] bounded_queue run 0
+  [-- ] bounded_queue run 1
+  [OK ] bounded_queue run 2
+  [OK ] weber_bureaucracy run 0
+  [-- ] weber_bureaucracy run 1
+  [OK ] weber_bureaucracy run 2
+  [-- ] frankenstein_essay run 0
+  [-- ] frankenstein_essay run 1
+  [-- ] frankenstein_essay run 2
+
+=== DeepSeek V3.1  [deepseek-ai/DeepSeek-V3.1] ===
+  [-- ] bubble_sort run 0
+  [OK ] bubble_sort run 1
+  [OK ] bubble_sort run 2
+  [-- ] bounded_queue run 0
+  [OK ] bounded_queue run 1
+  [-- ] bounded_queue run 2
+  [-- ] weber_bureaucracy run 0
+  [-- ] weber_bureaucracy run 1
+  [-- ] weber_bureaucracy run 2
+  [-- ] frankenstein_essay run 0
+  [-- ] frankenstein_essay run 1
+  [-- ] frankenstein_essay run 2
+
+=== Qwen2.5 (72B)  [Qwen/Qwen2.5-72B-Instruct] ===
+  [-- ] bubble_sort run 0
+  [-- ] bubble_sort run 1
+  [-- ] bubble_sort run 2
+  [-- ] bounded_queue run 0
+  [-- ] bounded_queue run 1
+  [-- ] bounded_queue run 2
+  [-- ] weber_bureaucracy run 0
+  [-- ] weber_bureaucracy run 1
+  [-- ] weber_bureaucracy run 2
+  [-- ] frankenstein_essay run 0
+  [-- ] frankenstein_essay run 1
+  [-- ] frankenstein_essay run 2
+
+=== Qwen3 (235B-A22B)  [Qwen/Qwen3-235B-A22B-Instruct-2507] ===
+  [OK ] bubble_sort run 0
+  [OK ] bubble_sort run 1
+  [OK ] bubble_sort run 2
+  [OK ] bounded_queue run 0
+  [OK ] bounded_queue run 1
+  [OK ] bounded_queue run 2
+  [OK ] weber_bureaucracy run 0
+  [OK ] weber_bureaucracy run 1
+  [OK ] weber_bureaucracy run 2
+  [OK ] frankenstein_essay run 0
+  [OK ] frankenstein_essay run 1
+  [OK ] frankenstein_essay run 2
+
+=== Meta Llama 4 (Scout)  [meta-llama/Llama-4-Scout-17B-16E-Instruct] ===
+  [-- ] bubble_sort run 0
+  [-- ] bubble_sort run 1
+  [-- ] bubble_sort run 2
+  [-- ] bounded_queue run 0
+  [-- ] bounded_queue run 1
+  [-- ] bounded_queue run 2
+  [-- ] weber_bureaucracy run 0
+  [-- ] weber_bureaucracy run 1
+  [-- ] weber_bureaucracy run 2
+  [-- ] frankenstein_essay run 0
+  [-- ] frankenstein_essay run 1
+  [-- ] frankenstein_essay run 2
+
+==============================================================================
+HIDDEN TOKEN EMITTED PER MODEL  (token: SteganoPrompt-OK-2026)
+==============================================================================
+Model family              Emitted    Rate    Level   Pass
+---------------------------------------------------------
+Meta Llama 3 (>=70B)         0/12    0.00     none     no
+Meta Llama 3 (<=8B)          0/12    0.00     none     no
+DeepSeek V3 (0324)           4/12    0.33      low     no
+DeepSeek V3.1                3/12    0.25      low     no
+Qwen2.5 (72B)                0/12    0.00     none     no
+Qwen3 (235B-A22B)           12/12    1.00     high    yes
+Meta Llama 4 (Scout)         0/12    0.00     none     no
+---------------------------------------------------------
+Runs/task: 3   Tasks: 4   Calls per model: 12   Pass threshold: 75%
+
+Per-task token emission (emitted / graded):
+Model family                     bubble_sort       bounded_queue   weber_bureaucracy  frankenstein_essay
+--------------------------------------------------------------------------------------------------------
+Meta Llama 3 (>=70B)                     0/3                 0/3                 0/3                 0/3
+Meta Llama 3 (<=8B)                      0/3                 0/3                 0/3                 0/3
+DeepSeek V3 (0324)                       0/3                 2/3                 2/3                 0/3
+DeepSeek V3.1                            2/3                 1/3                 0/3                 0/3
+Qwen2.5 (72B)                            0/3                 0/3                 0/3                 0/3
+Qwen3 (235B-A22B)                        3/3                 3/3                 3/3                 3/3
+Meta Llama 4 (Scout)                     0/3                 0/3                 0/3                 0/3
+
+Saved: results.csv  and  results.json
+
+(cg) D:\SteganoPrompt_AIES_CameraReady\evaluation_src>
