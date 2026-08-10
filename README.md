@@ -229,8 +229,8 @@ That's the whole project — four files, zero dependencies, with the entire app 
 | Mistral Large / Medium         | ❌         | none       |
 | Mistral Codestral              | ✅         | medium     |
 | DeepSeek V3 / V3.1             | ✅         | low        |
-| Meta Llama 3 (≥ 70B)           | ✅         | none       |
-| Meta Llama 3 (≤ 8B)            | ✅         | none       |
+| Meta Llama 3 (≥ 70B)           | ❌         | none       |
+| Meta Llama 3 (≤ 8B)            | ❌         | none       |
 | Meta Llama 4 (Scout)           | ❌         | none       |
 
 The hosted frontier chat models are the most reliable couriers: Claude, Gemini, Grok, and the large Qwen3-235B emitted the token on every trial. The clearest exception is OpenAI's **GPT-5** series — the current ChatGPT product now sanitises the Tag block out of the input before the model sees it, so the token never appears (earlier GPT-4 / GPT-4o read and followed the same payload). Google has said it does not treat the channel as a security issue for Gemini, which matches the high compliance observed there. Several open-weight models (Llama 3 at 8B and 70B, Llama 4 Scout, Qwen2.5-72B) read the bytes but never act on them. Notably, **no model declined on integrity grounds** — where the payload fails, it is because the provider strips the characters or the model simply doesn't act on them, not because it refuses.
